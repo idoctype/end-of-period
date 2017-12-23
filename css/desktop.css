@@ -1,0 +1,140 @@
+@charset "utf-8";
+/*PC端*/
+body{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决方案*/
+/*顶部导航栏 开始*/
+.top_nav{
+	width: 100%;
+	height: 74px;
+	margin: 0px;
+	padding: 0px;
+	background: linear-gradient(#333,#000);
+	list-style: none;
+	text-align: left;
+}
+#logo{
+	width: 270px;
+	float: left;
+	list-style: none;
+}
+#logo img{
+	width: 270px;
+	padding: 0px;
+}
+#menu_content{
+	display: block;
+}
+.top_nav li{
+	float: left;
+	text-align: center;
+	line-height: 74px;
+}
+.top_nav a{
+	display: block;
+	width: 120px;
+	height: 74px;
+	color: #ccc;
+	padding: 0 10px;
+}
+.top_nav a:hover{
+	background: linear-gradient(#000,#333);
+}
+#but_form{
+	float: right;
+	margin-right: 20px;
+}
+.search{
+	height: 20px;
+	padding: 0 10px;
+	background-color: rgba(255,255,255,0.5);
+	border: none;
+	border-radius: 10px;
+}
+/*顶部导航栏结束*/
+/*banner 开始*/
+.banner{
+	background-color: #31B0D5;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	position: absolute;
+	top: 74px;
+	font-weight: bold;
+	color: #fff;
+}
+.banner h1{
+	font-size: 50px;
+	font-family: "微软雅黑";
+	margin-top: 100px;
+	height: 60px;
+}
+.btns{
+	width: 330px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.btns a input{
+	float: left;
+	margin: 20px 10px;
+}
+.btng{
+	display: block;
+	background: linear-gradient(#0c0,#0a0);
+	color: #fff;
+	font-size: 20px;
+	width: 120px;
+	border-radius: 5px;
+	padding: 10px;
+	transition: 0.3s;
+}
+.btng:hover{
+	width: 140px;
+	background: linear-gradient(#0a0,#0c0);
+}
+.btnw{
+	display: block;
+	background: linear-gradient(#fff,#eee);
+	color: #000;
+	font-size: 20px;
+	width: 120px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.btnw:hover{
+	width: 140px;
+	background: linear-gradient(#eee,#fff);
+}
+/*banner 结束*/
+/*描述内容区 开始*/
+.main{
+	margin-top: 400px;
+	background-color: #333;
+	width: 100%;
+	height: 538px;
+	display: flex;
+	justify-content: space-around;
+}
+.block{
+	width: 30%;
+	margin: 0 20px;
+	float: left;
+}
+.block h2{
+	display: block;
+	margin-top: 50px;
+	color: #0c0;
+	border-bottom: 1px solid #ccc;
+}
+.block p{
+	color: #fff;
+}
