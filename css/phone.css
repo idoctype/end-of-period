@@ -82,6 +82,7 @@ input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决�
 	float: right;
 }
 .search{
+	width: 180px;
 	height: 20px;
 	padding: 0 10px;
 	background-color: rgba(255,255,255,0.5);
