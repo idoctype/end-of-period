@@ -9,6 +9,16 @@ a{
 }
 input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决方案*/
 /*顶部导航栏 开始*/
+nav{
+	width: 100%;
+	position: absolute;
+	top:0px;
+	animation: navt 1s;
+}
+@keyframes navt{
+	from{top: -20%;}
+	to{top:0px;}
+}
 .top_nav{
 	width: 100%;
 	height: 74px;
@@ -50,11 +60,11 @@ input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决�
 	margin-right: 20px;
 }
 .search{
-	height: 20px;
+	height: 30px;
 	padding: 0 10px;
 	background-color: rgba(255,255,255,0.5);
 	border: none;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 /*顶部导航栏结束*/
 /*banner 开始*/
@@ -67,6 +77,11 @@ input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决�
 	top: 74px;
 	font-weight: bold;
 	color: #fff;
+	animation: banner 1s;
+}
+@keyframes banner{
+	from{left: -60%;}
+	to{left: 0;}
 }
 .banner h1{
 	font-size: 50px;
@@ -117,12 +132,18 @@ input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决�
 /*banner 结束*/
 /*描述内容区 开始*/
 .main{
-	margin-top: 400px;
+	position: absolute;
+	top: 474px;
 	background-color: #333;
 	width: 100%;
 	height: 538px;
 	display: flex;
 	justify-content: space-around;
+	animation: main 1s;
+}
+@keyframes main{
+	from{left: 170%;}
+	to{left: 0px;}
 }
 .block{
 	width: 30%;
