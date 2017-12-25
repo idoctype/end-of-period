@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*PC端*/
+/*手机端*/
 body{
 	width: 100%;
 	padding: 0px;
@@ -7,6 +7,25 @@ body{
 }
 a{
 	text-decoration: none;
+}
+.trb{
+	position: relative;
+	text-decoration: none;
+	z-index: 1;
+}
+.trb:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	width: 100%;
+	background: #fff;
+	transform: scale(0);
+	transition: all 0.5s;
+}
+.trb:hover:before{
+	transform: scale(1);
 }
 input,textarea{outline:none;}/*谷歌浏览器input边框选择时蓝色解决方案*/
 /*顶部导航栏 开始*/
@@ -190,5 +209,6 @@ nav{
 	border-bottom: 1px solid #ccc;
 }
 .block p{
+	width: 90%;
 	color: #fff;
 }
