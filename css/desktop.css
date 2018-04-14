@@ -74,6 +74,7 @@ nav{
 }
 .top_nav a:hover{
 	background: linear-gradient(#000,#333);
+	transition: 0.5s;
 }
 #but_form{
 	float: right;
