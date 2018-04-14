@@ -46,6 +46,10 @@ nav{
 	background: linear-gradient(#333,#000);
 	list-style: none;
 	text-align: left;
+	tranistion: 0.5s;
+}
+.top_nav:hover{
+	background: linear-gradient(#000,#333);
 }
 #logo{
 	width: 270px;
@@ -70,12 +74,8 @@ nav{
 	height: 72px;
 	color: #ccc;
 	padding: 0 10px;
-	transition: 0.5s;
 }
-.top_nav a:hover{
-	background: linear-gradient(#000,#333);
-	transition: 0.5s;
-}
+
 #but_form{
 	float: right;
 	margin-right: 20px;
